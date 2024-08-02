@@ -1,0 +1,13 @@
+# 此插件运作于白名单模式
+# * 代表可以随意填写一段 例如: '/cc dd abcd' 或 '/cc dd 1112' 都不会被拦截，但是 '/cc dd' 和 '/cc dd abcd 123'都会被拦截
+# [all] 代表允许所有子命令
+
+# 提示信息
+# 支持 MiniMessage
+Message: "<red><bold>Error</bold> <dark_gray>» <red>您无权访问该命令!"
+
+# 白名单命令列表
+Commands:
+  - /aa bb
+  - /cc dd *
+  - /ee ff [all]
