@@ -1,7 +1,7 @@
 # CommandBlocker
 [CommandBlocker](https://github.com/YF-Eternal/CommandBlocker) 是一个 Minecraft 服务器(Spigot)的命令拦截插件。它工作在白名单模式下。
 * 本插件基于 Bukkit API 开发，向下兼容到 Minecraft 1.8.x，向上兼容到最新的 1.21.x 版本。
-* 推荐和 [CommandHider](https://github.com/YF-Eternal/CommandHider) 搭配使用。
+* 推荐和 [CommandHider](https://github.com/YF-Eternal/CommandHider) 搭配使用 (CommandHider 仅支持 1.8.x - 1.12.x)。
 
 ## 特性
 * `- '/aa'`代表除了`/aa`以外的全部拦截，子命令也拦截。
