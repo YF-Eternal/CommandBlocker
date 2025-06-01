@@ -1,5 +1,6 @@
 package org.commandblocker;
 
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.commandblocker.commands.CommandBlockerCMD;
 import org.commandblocker.listeners.PlayerCommandPreprocessListener;
@@ -26,7 +27,7 @@ public final class CommandBlocker extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new PlayerCommandPreprocessListener(this), this);
 
         // 发送加载成功的信息到控制台
-        getLogger().info(ChatColor.AQUA + "CommandBlocker 已加载!");
+        ChatUtils.chat(Bukkit.getConsoleSender(), "&bCommandBlocker 已加载!");
         getLogger().info("作者: YF_Eternal");
     }
 
@@ -38,7 +39,7 @@ public final class CommandBlocker extends JavaPlugin {
         }
 
         // 发送加载成功的信息到控制台
-        getLogger().info(ChatColor.AQUA + "CommandBlocker 已卸载!");
+        ChatUtils.chat(Bukkit.getConsoleSender(), "&bCommandBlocker 已卸载!");
     }
 
     // 获取设置管理器实例
